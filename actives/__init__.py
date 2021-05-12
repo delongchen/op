@@ -42,11 +42,10 @@ class Actives:
                 return
 
             now, before = ACS[n].NAME, ACS[cls.ACN].NAME
-            print(now, before)
             now_ins, before_ins = AC_CACHE[now], AC_CACHE[before]
 
             before_ins.button.setText(before)
-            now_ins.button.setText(now + ' <')
+            now_ins.button.setText(f'{now} <')
 
             cls.ACN = n
             cls.AC = now_ins
